@@ -20,20 +20,38 @@ hr {
     border-width: 3px;
 }
 
+hr.full {
+    border-color: #e2e2e2;
+    max-width: 100%;
+}
+
 hr.light {
-    border-color: #fff;
+    border-color: #eee;
+}
+
+hr.green {
+    border-color: #60C576;
 }
 
 a {
-    color: #f05f40;
+    color: #60C576;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
+p.green {
+    color: #60C576;
+}
+
 a:hover,
 a:focus {
     color: #eb3812;
+}
+
+@font-face {
+    font-family: elm;
+    src: url(ElegantLux-Mager.otf);
 }
 
 h1,
@@ -45,6 +63,10 @@ h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
+h6 {
+    font-size: 15px;
+}
+
 p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -52,7 +74,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #60C576;
 }
 
 .bg-dark {
@@ -153,7 +175,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #60C576;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -214,6 +236,14 @@ header .header-content .header-content-inner p {
 @media(min-width:768px) {
     header {
         min-height: 100%;
+    }
+
+    #about {
+        min-height: 70%;
+    }
+
+    #about .container {
+        transform: translateY(25%);
     }
 
     header .header-content {
@@ -473,6 +503,7 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+    background-color: #efefef;
 }
 
 #schedule-list{
