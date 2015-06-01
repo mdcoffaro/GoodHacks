@@ -35,8 +35,13 @@ hr.light {
     border-color: #eee;
 }
 
-hr.green {
+.green {
     border-color: #60C576;
+    background-color: #60C576;
+}
+
+.green-text {
+    color: #60C576;
 }
 
 a {
