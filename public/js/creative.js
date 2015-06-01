@@ -28,7 +28,7 @@
     });
 
     // Fit Text Plugin for Main Header
-    $("h1").fitText(
+    $("h1:not(#titletext,#subtitletext)").fitText(
         1.2, {
             minFontSize: '35px',
             maxFontSize: '65px'

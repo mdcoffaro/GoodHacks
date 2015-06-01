@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* Using this palette: http://paletton.com/#uid=52T0u0kgqyc5gT1b1ISl3sNqOpX */
+
 html,
 body {
     width: 100%;
@@ -14,9 +16,13 @@ body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
+ul {
+    padding-left: 0px;
+}
+
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #199C36;
     border-width: 3px;
 }
 
@@ -54,6 +60,11 @@ a:focus {
     src: url(ElegantLux-Mager.otf);
 }
 
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-Regular.otf);
+}
+
 h1,
 h2,
 h3,
@@ -61,6 +72,10 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+h4 strong {
+    font-size: 19px;
 }
 
 h6 {
@@ -134,7 +149,7 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #60C576!important;
     background-color: transparent;
 }
 
@@ -143,7 +158,33 @@ aside {
     background-color: transparent;
 }
 
+.quicksand {
+    font-family: quicksand;
+}
+
+#titletext {
+    font-size: 46px;
+}
+
+#subtitletext {
+    font-size: 18px;
+}
+
+
 @media(min-width:768px) {
+    #titletext {
+        font-size: 100px;
+    }
+
+    #subtitletext {
+        font-size: 44px;
+    }
+
+    .col-alone {
+        min-width: 100%;
+        padding-top: 33px;
+    }
+
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -190,7 +231,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #60C576;
     }
 }
 
@@ -235,7 +276,7 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 99.5%;
     }
 
     #about {
@@ -415,9 +456,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #199C36;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #199C36;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -429,9 +470,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #60C576;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #60C576;
 }
 
 .btn-primary:active,
@@ -458,12 +499,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #5297A4;
+    background-color: #5297A4;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: #5297A4;
     background-color: #fff;
 }
 
