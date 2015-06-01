@@ -83,13 +83,17 @@ h4 strong {
     font-size: 19px;
 }
 
+h2 {
+    font-size:27px;
+}
+
 h6 {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.5;
 }
 
@@ -178,11 +182,11 @@ aside {
 
 @media(min-width:768px) {
     #titletext {
-        font-size: 100px;
+        font-size: 76px;
     }
 
     #subtitletext {
-        font-size: 44px;
+        font-size: 24px;
     }
 
     .col-alone {
@@ -288,10 +292,6 @@ header .header-content .header-content-inner p {
         min-height: 70%;
     }
 
-    #about .container {
-        transform: translateY(25%);
-    }
-
     header .header-content {
         position: absolute;
         top: 50%;
@@ -311,7 +311,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -464,6 +464,7 @@ fieldset[disabled] .btn-default.active {
     border-color: #199C36;
     color: #fff;
     background-color: #199C36;
+    font-size:10px;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -522,7 +523,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 15px 30px;
+    padding: 12px 22px;
 }
 
 ::-moz-selection {
