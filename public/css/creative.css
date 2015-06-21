@@ -1,3 +1,4 @@
+
 /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -110,8 +111,14 @@ p {
     color: rgba(255,255,255,.7);
 }
 
+.row {
+    margin: 0 auto;
+}
+
 section {
     padding: 100px 0;
+    display: table;
+    width: 100%;
 }
 
 aside {
@@ -179,6 +186,13 @@ aside {
     font-size: 18px;
 }
 
+@media(min-width:1200px) {
+    .col-alone {
+        padding-top: 33px;
+    }
+}
+
+
 
 @media(min-width:768px) {
     #titletext {
@@ -191,7 +205,6 @@ aside {
 
     .col-alone {
         min-width: 100%;
-        padding-top: 33px;
     }
 
     .navbar-default {
@@ -283,6 +296,32 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255,.7);
 }
 
+#about-inner {
+    vertical-align:middle;
+    display: table-cell;
+}
+
+#sponsors {
+    display
+    width: 100%;
+}
+
+.imgcontainer {
+    display: table;
+    width:30vw;
+    height:250px;
+    padding: 30px 30px 30px 30px;
+}
+.imgcontainer img {
+    max-width: 30vw;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    vertical-align:middle;
+    display: table-cell;
+    margin: 0 auto;
+}
+
 @media(min-width:768px) {
     header {
         min-height: 99.5%;
@@ -290,6 +329,8 @@ header .header-content .header-content-inner p {
 
     #about {
         min-height: 70%;
+        display: table;
+        width: 100%;
     }
 
     header .header-content {
