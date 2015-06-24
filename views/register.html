@@ -36,7 +36,50 @@
 
 <body id="page-top bodyclass">
 
-    <div class="container">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll quicksand" href="#page-top">GoodHacks</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Schedule</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">Sponsors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+    <!--                 <li>
+                        <a class="page-scroll" href="#contact">Register</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+
+    <div class="container" id="registration-form">
         <div class="row centered-form">
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
           <div class="panel panel-default">
@@ -74,8 +117,26 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <input type="text" name="institution" id="institution" class="form-control input-sm" placeholder="School or institution">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <input type="text" name="how" id="how" class="form-control input-sm" placeholder="How did you hear about GoodHacks?">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <input type="text" name="why" id="why" class="form-control input-sm" placeholder="Why do you want to hack with us?">
+                  </div>
+                </div>
                 
-                <input type="submit" value="Register" class="btn btn-info btn-block">
+                <input type="submit" value="Register" class="btn btn-info btn-block" id="register-button">
               
               </form>
             </div>
@@ -83,6 +144,7 @@
         </div>
       </div>
     </div>
+  </header>
 
 
     <div style="height:7.5%"></div>
