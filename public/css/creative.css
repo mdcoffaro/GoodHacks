@@ -556,3 +556,11 @@ body {
 #schedule-list{
     list-style-type: none;
 }
+
+#registration-form{
+    padding-top: 200px;
+}
+
+#register-button{
+    background-color: #189C35;
+}
