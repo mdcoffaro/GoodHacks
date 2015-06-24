@@ -84,6 +84,10 @@ h4 strong {
     font-size: 19px;
 }
 
+.text-left h4 {
+    margin-top: 19px;
+}
+
 h2 {
     font-size:27px;
 }
@@ -115,6 +119,14 @@ p {
     margin: 0 auto;
 }
 
+.table {
+    display: inline-block;
+}
+
+td {
+    padding: 5vw 5vw 0 5vw;
+}
+
 section {
     padding: 100px 0;
     display: table;
@@ -142,12 +154,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #60C576;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #199C36;
 }
 
 .navbar-default .nav > li>a,
@@ -160,7 +172,7 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #60C576;
 }
 
 .navbar-default .nav > li.active>a,
@@ -243,7 +255,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #199C36;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -308,14 +320,13 @@ header .header-content .header-content-inner p {
 
 .imgcontainer {
     display: table;
-    width:30vw;
-    height:250px;
+    width:15vw;
     padding: 30px 30px 30px 30px;
 }
 .imgcontainer img {
-    max-width: 30vw;
+    width: 150px;
+    max-width: 24vw;
     max-height: 250px;
-    width: auto;
     height: auto;
     vertical-align:middle;
     display: table-cell;
@@ -440,7 +451,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #60C576;
 }
 
 .no-gutter > [class*=col-] {
@@ -592,6 +603,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
     background-color: #efefef;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 #schedule-list{
@@ -604,4 +616,14 @@ body {
 
 #register-button{
     background-color: #189C35;
+    border-radius: 3px;
+}
+
+.halfregrow  {
+    padding: 0;
+    width: 47.5%;
+}
+
+.halfregrow-holder {
+    width: 5%;
 }
