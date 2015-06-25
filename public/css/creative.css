@@ -611,12 +611,14 @@ body {
 }
 
 #registration-form{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 #register-button{
     background-color: #189C35;
     border-radius: 3px;
+}#register-button:hover {
+    color:#efefef;
 }
 
 .halfregrow  {
@@ -626,4 +628,10 @@ body {
 
 .halfregrow-holder {
     width: 5%;
+}
+
+#thanks {
+    border-radius: 3px;
+    background-color: #189C35;
+    color: white;
 }
