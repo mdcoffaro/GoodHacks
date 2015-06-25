@@ -3,6 +3,41 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+$(document).ready(function() {
+
+    $(":submit").on('click', submitForm);
+});
+
+function submitForm(){
+    var values = $('form').serializeArray();
+
+    var firstname = values[0].value;
+    var lastname = values[1].value;
+    var email = values[2].value;
+    var passwordHash = values[3].value;
+    var confirmPasswordHash = values[4].value;
+    var school = values[5].value;
+    var how = values[6].value;
+    var why = values[7].value;
+
+    
+    var student = {
+        'firstname' : firstname,
+        'lastname' : lastname,
+        'email' : email,
+        'passwordhash' : passwordHash,
+        'passwordhashverify' : confirmPasswordHash,
+        'schoolorg' : school,
+        'how' : how,
+        'why' : why
+    }
+
+    //TODO form validation and security
+
+
+
+}
+
 
 (function($) {
     "use strict"; // Start of use strict
@@ -46,3 +81,6 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+
+
+
