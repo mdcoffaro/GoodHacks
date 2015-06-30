@@ -21,12 +21,16 @@ $(document).ready(function () {
 	})
 })
 
+$(function() {
+    $( document ).tooltip();
+});
+
 function verifyName(firstname, lastname) {
 	var re = /[A-Za-z\'\ ]/i;
 
 	if(re.test(firstname) && re.test(lastname)) return true;
 	else {
-		alertUser("first name and last name failed")
+		alertUser("First and Last names have to be alphabetical characters.")
 		return false;
 	}
 }
@@ -35,14 +39,14 @@ function verifyEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     if(re.test(email)) return true;
     else {
-    	alertUser("email failed");
+    	alertUser("Not a valid email.");
     	return false;
     }
 }
 
 function verifyPassword(password, confirm) {
 	if(password != confirm) {
-		alertUser("passwords must be the same")
+		alertUser("Passwords have to be at least 7 characters and match")
 		return false;
 	}
 	if(password.length <= 6) {
@@ -53,8 +57,14 @@ function verifyPassword(password, confirm) {
 }
 
 function alertUser(msg) {
-	$(".panel").addClass("shake shake-little")
-	setTimeout(function() {
-		$(".panel").removeClass("shake shake-little")
-	}, 250);
+	$(".error").html(msg);
+	$(".error").slideDown(250, function() {
+		setTimeout(function() {
+			$(".error").slideUp(250);
+		}, 6000)
+	});
+	// $(".panel").addClass("shake shake-little")
+	// setTimeout(function() {
+	// 	$(".panel").removeClass("shake shake-little")
+	// }, 250);
 }
