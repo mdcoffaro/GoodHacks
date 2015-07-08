@@ -16,5 +16,10 @@ router.get('/about', function(req, res, next) {
 	res.render('about.html');
 });
 
+/*GET student profile page */
+router.get('/studentProfile', function(req, res, next) {
+	res.render('studentProfile.html');
+})
+
 
 module.exports = router;
