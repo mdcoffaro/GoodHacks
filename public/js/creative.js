@@ -33,6 +33,9 @@ function submitForm(){
     }
 
     //TODO form validation and security
+    if(passwordhash != passwordhashverify){
+        //say they dont match
+    }
 
 
 
