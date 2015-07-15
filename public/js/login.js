@@ -20,7 +20,7 @@ function loginUser(e) {
 
 
 			//display their profile page (need to figure out routes)
-			window.location =  "http://google.com/";
+			window.location =  "http://goodhacks.co/error";
 		},
 		error: function(username, error){
 			//login failed, display error message

@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 $(document).ready(function() {
+    $('.toggler').on('click', function(){
+        $(this).parent().children().toggle();
+        $(this).parent().parent().find('.toggled_content').slideToggle();
+    });
 });
 
 
