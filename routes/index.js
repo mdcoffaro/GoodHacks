@@ -21,5 +21,10 @@ router.get('/studentProfile', function(req, res, next) {
 	res.render('studentProfile.html');
 })
 
+/*GET student profile page */
+router.get('/sponsorProfile', function(req, res, next) {
+	res.render('sponsorProfile.html');
+})
+
 
 module.exports = router;
