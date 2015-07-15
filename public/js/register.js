@@ -11,7 +11,7 @@ $(document).ready(function () {
 		// Check forms
 		//insets data into db
 		var user = new Parse.User();
-		user.set("username", $("#first_name").prop('value')+$("#last_name").prop('value'));
+		user.set("username", $("#email").prop('value'));
 		user.set("firstName", $("#first_name").prop('value'));
 		user.set("lastName", $("#last_name").prop('value'));
 		user.set("email", $("#email").prop('value'));
