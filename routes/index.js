@@ -17,8 +17,8 @@ router.get('/about', function(req, res, next) {
 });
 
 /*GET student profile page */
-router.get('/studentProfile', function(req, res, next) {
-	res.render('studentProfile.html');
+router.get('/studentProfile', function(req, res) {
+	res.render('studentProfile', { name: 'Michael Coffaro' });
 })
 
 /*GET student profile page */
