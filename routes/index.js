@@ -34,7 +34,7 @@ router.get('/studentProfile', function(req, res) {
   		error: function(){
   		}
 	});*/
-	res.render("error.html");
+	res.render('error.html');
 })
 
 /*GET student profile page */
