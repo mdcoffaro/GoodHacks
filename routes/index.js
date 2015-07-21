@@ -23,8 +23,7 @@ router.get('/about', function(req, res, next) {
 
 /*GET student profile page */
 router.get('/studentProfile', function(req, res) {
-	//var userObject = {};
-	var userId = req.query.userid;
+	/*var userId = req.query.userid;
 	var query = new Parse.Query(Parse.User);
 	query.equalTo("objectId", userId);  // find all the women
 	query.find({
@@ -34,7 +33,8 @@ router.get('/studentProfile', function(req, res) {
   		},
   		error: function(){
   		}
-	});
+	});*/
+	res.render("error.html");
 })
 
 /*GET student profile page */
