@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var Parse = require('parse').Parse;
+//var Parse = require('parse').Parse;
 
-Parse.initialize("yWusaetgryRjKz5aTG81tzEd4F40e7BSrse5Tpao", "jtBjEknzObCeEh0hYUVmiwTiITQXpKjo4QNigzzJ");
+//Parse.initialize("yWusaetgryRjKz5aTG81tzEd4F40e7BSrse5Tpao", "jtBjEknzObCeEh0hYUVmiwTiITQXpKjo4QNigzzJ");
 
 
 /* GET home page. */
