@@ -28,6 +28,8 @@ head
   script(src='js/jquery.js')
   |     
   script(src='js/register.js')
+  //-|
+  //-script(src='js/studentProfile.js');
   //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
   //- WARNING: Respond.js doesn't work if you view the page via file://
   //-if lt IE 9
@@ -82,7 +84,7 @@ head
               .col-sm-12
                 .col-xs-12.col-sm-8
                   h2 Michael
-                  h2=name
+                  h2=user[0].attributes.email
                   h2 BITCH                               
                   p Email: mcoffaro@stanford.edu 
                   |                                 

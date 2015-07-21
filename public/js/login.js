@@ -14,13 +14,30 @@ function loginUser(e) {
 			//login successful, clear form, take user to their profile page
 			console.log("Login successful");
 
+			var userID = "";
+
 			//clear form
 			$("#login-email").val("");
 			$("#login-password").val("");
 
 
+			var currentUser = Parse.User.current();
+
+			/*var query = new Parse.Query(Parse.User);
+			query.equalTo("email", username);
+			query.find({
+				success: function(user){
+					// find the user ID
+
+				}
+			});*/
+
+
 			//display their profile page (need to figure out routes)
-			window.location =  "http://goodhacks.co/error";
+			console.log("http://localhost:3000/studentProfile?userid=" + currentUser.id);
+
+			window.location =  "http://localhost:3000/studentProfile?userid=" + currentUser.id;
+			
 		},
 		error: function(username, error){
 			//login failed, display error message
