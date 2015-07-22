@@ -656,6 +656,10 @@ body {
     padding-top: 10px;
 }
 
-#about-more-info{
-    padding-top: 20px;
+.about-more-info {
+    text-align: justify;
+}
+
+#login-email, #login-password {
+    border-radius: 5px;
 }
