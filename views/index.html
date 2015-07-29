@@ -117,21 +117,26 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">About</h2>
                     <hr class="primary light">
-                    <p class="text-faded"><span style="color:#FCFCFC"><h3>GoodHacks</h3></span> is Stanford's first annual hackathon designed to promote social good. It was created by the students, for the students. Whether you're a student, a mover, a non-profit organization or a corporation, GoodHacks has something to offer you.</p>
+                    <p id="about-text" class="text-faded"><span style="color:#FCFCFC">GoodHacks</span> is Stanford's first annual hackathon designed to promote social good. It was created by the students, for the students. Whether you're a student, a mover, a non-profit organization or a corporation, GoodHacks has something to offer you.</p>
+                    <div class="toggled_content" style="display:none">
+                        <p class="about-more-info">
+                            GoodHacks was started by a team of students and industry professionals working together to give back to their community. To do this, they created GoodHacks - Stanford’s first hackathon centered around social good. GoodHacks is the energy-filled environment of a traditional hackathon (brilliant students, clever ideas, and sizzling energy) with a twist - hackers will be able to see themselves create tangible, meaningful social impact over the course of 24 exciting hours.
+                        </p>
+                        <p class="about-more-info">
+                            However, GoodHacks won't stop at hacking. GoodHacks will simultaneously act as a fundraiser, annually raising a significant amount of money for a group of outstanding charities as well. In this regard, GoodHacks' aim is to generate both instantaneous and long-term impact.
+                        </p>
+                        <p class="about-more-info">
+                            In response to some of the world’s most pressing needs in Public Safety/Disaster Relief, Global Health, Poverty, and Education, GoodHacks hopes to unleash the creativity and problem solving skills of the Stanford community and beyond. It is the founders' hope that one day GoodHacks will inspire a nation-wide student movement to spread both the excitement and opportunities provided by the use of technology, creativity, applied design and critical thinking for the betterment of humanity. In an age where everyone is racing to make the next big social app, we want to show what cross-disciplinary collaboration and engineering for social good can accomplish.
+                        </p>
+                        <p class="about-more-info">
+                            GoodHacks offers hundreds of students from all over the country an opportunity to hack on meaningful social problems while providing nonprofits and supporters an avenue in which to build meaningful connections with these brilliant young minds.
+                            <a href="/register" style="color:red"> Join us!</a>
+                        </p>
+                    </div>
                     <div class="toggle_parent">
                         <div class="toggleHolder">
-                            <span class="toggler"><button class="btn btn-default btn-xl">Learn More</button></span>
-                             <span class='toggler' style='display:none;'><button class="btn btn-default btn-xl">Close</button></span>
-                        </div>
-
-                        <div class="toggled_content" style="display:none">
-                            <p id="about-more-info">
-                                <strong>What's GoodHacks: </strong></br>
-                                In collaboration with non-profits from across the country, 250+ engineering students from around the nation will come together for 24 hours to try and solve some of theworld’s hardest social problems in Public Safety/Disaster Relief, Global Health, Poverty, and Education. In an age where everyone is trying to make the next big app, we want to show what collaboration and engineering for social good can accomplish. Doubling as a fundraiser, GoodHacks hopes to raise a significant amount of money for a group of outstanding charities as well.
-                            </p>
-
-                            <!-- we can add more info here if we want -->
-
+                             <button id="learnmore"class="btn btn-default btn-xl">Learn More</button>
+                             <button id="closeabout" style="display:none;" class="btn btn-default btn-xl">Close</button>
                         </div>
                     </div>
                 </div>
@@ -236,7 +241,7 @@
                     <hr class="primary green">
                     <p>Some awesome student groups, companies and nonprofits who are on board with the GoodHacks team.</p>
                 </div>
-            
+
             </div>
         </div>
 
@@ -307,7 +312,7 @@
                         </div>
                     </td>
                 </tr>
-            </table>  
+            </table>
         </div>
     </section>
 

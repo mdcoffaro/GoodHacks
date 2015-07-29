@@ -4,9 +4,21 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 $(document).ready(function() {
-    $('.toggler').on('click', function(){
-        $(this).parent().children().toggle();
-        $(this).parent().parent().find('.toggled_content').slideToggle();
+    $('#learnmore, #closeabout').on('click', function() {
+        if($(this).attr('id') == "learnmore") {
+            $("#learnmore").hide();
+            $("#closeabout").show();
+
+            $(".toggled_content").slideDown(500);
+            $("#about-text").animate({"opacity": .35}, 500);
+
+        } else {
+            $("#closeabout").hide();
+            $(".toggled_content").slideUp(500);
+            $("#about-text").animate({"opacity": 1}, 500);
+
+            $("#learnmore, #about-text").show();
+        }
     });
 });
 
