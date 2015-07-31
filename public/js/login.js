@@ -36,6 +36,8 @@ function loginUser(e) {
 			//display their profile page (need to figure out routes)
 			console.log("http://localhost:3000/studentProfile?userid=" + currentUser.id);
 
+			
+
 			window.location =  "http://localhost:3000/studentProfile?userid=" + currentUser.id;
 			
 		},

@@ -1,6 +1,6 @@
 doctype html(lang='en')
 head
-  title #{name} - Name
+  title= "GoodHacks - " + user[0].attributes.firstName + " " + user[0].attributes.lastName
   //- meta(charset='utf-8')
   //-   |     
   //-   meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -83,14 +83,15 @@ head
             .well.profile
               .col-sm-12
                 .col-xs-12.col-sm-8
-                  h2 Michael
-                  h2=user[0].attributes.email
-                  h2 BITCH                               
-                  p Email: mcoffaro@stanford.edu 
+                  h2=user[0].attributes.firstName + " " + user[0].attributes.lastName                              
+                  div(id="email") Email:
+                    br
+                    p=user[0].attributes.email
+                  |                             
+                  p Change Password
                   |                                 
-                  p Change Password (needs mechanics) 
-                  |                                 
-                  p  School: Stanford University 
+                  div(id="school") School: 
+                    p=user[0].attributes.school
                   |                                 
                   p
                     strong Interests: 
