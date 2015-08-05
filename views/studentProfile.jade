@@ -28,108 +28,103 @@ head
   script(src='js/jquery.js')
   |     
   script(src='js/register.js')
-  //-|
-  //-script(src='js/studentProfile.js');
-  //- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-  //- WARNING: Respond.js doesn't work if you view the page via file://
-  //-if lt IE 9
-    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-    |         
-    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  script(src='js/studentProfile.js')
 
-  body(id='page-top bodyclass')
-    nav#mainNav.navbar.navbar-default.navbar-fixed-top
-      .container-fluid
-        //- Brand and toggle get grouped for better mobile display
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-            span.sr-only Toggle navigation
-            |                     
-            span.icon-bar
-            |                     
-            span.icon-bar
-            |                     
-            span.icon-bar
-          |                 
-          a.navbar-brand.page-scroll.quicksand(href='/#page-top') GoodHacks
-        //- Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li
-              a.page-scroll(href='/#about') About
-            |                     
-            li
-              a.page-scroll(href='/#services') Schedule
-            |                     
-            li
-              a.page-scroll(href='/#faq') FAQ
-            |                     
-            li
-              a.page-scroll(href='/#sponsors') Sponsors
-            |                     
-            li
-              a.page-scroll(href='/#contact') Contact
-            //-
-              <li>
-              <a class="page-scroll" href="#contact">Register</a>
-              </li>
-        //- /.navbar-collapse
-      //- /.container-fluid
-    |     
-    header(style='min-height:100%')
-      .container
-        .row(margin-top:='', 500px;='')
-          .col-md-offset-2.col-md-8.col-lg-offset-3.col-lg-6
-            .well.profile
-              .col-sm-12
-                .col-xs-12.col-sm-8
-                  h2=user[0].attributes.firstName + " " + user[0].attributes.lastName                              
-                  div(id="email") Email:
-                    br
-                    p=user[0].attributes.email
-                  |                             
-                  p Change Password
-                  |                                 
-                  div(id="school") School: 
-                    p=user[0].attributes.school
-                  |                                 
-                  p
-                    strong Interests: 
-                    |                                     
-                    span.tags Design
-                    |  
-                    |                                     
-                    span.tags Web dev
-                    |                                     
-                    span.tags iOS
-                    |                                     
-                    span.tags Android
-                |              
+body(id='page-top bodyclass')
+  nav#mainNav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      //- Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          |                     
+          span.icon-bar
+          |                     
+          span.icon-bar
+          |                     
+          span.icon-bar
+        |                 
+        a.navbar-brand.page-scroll.quicksand(href='/#page-top') GoodHacks
+      //- Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a.page-scroll(href='/#about') About
+          |                     
+          li
+            a.page-scroll(href='/#services') Schedule
+          |                     
+          li
+            a.page-scroll(href='/#faq') FAQ
+          |                     
+          li
+            a.page-scroll(href='/#sponsors') Sponsors
+          |                     
+          li
+            a.page-scroll(href='/#contact') Contact
+          //-
+            <li>
+            <a class="page-scroll" href="#contact">Register</a>
+            </li>
+      //- /.navbar-collapse
+    //- /.container-fluid
+  |     
+  header(style='min-height:100%')
+    .container
+      .row(margin-top:='', 500px;='')
+        .col-md-offset-2.col-md-8.col-lg-offset-3.col-lg-6
+          .well.profile
+            .col-sm-12
+              .col-xs-12.col-sm-8
+                h2=user[0].attributes.firstName + " " + user[0].attributes.lastName                              
+                div(id="email") Email:
+                  br
+                  p=user[0].attributes.email
                 |                             
-                .col-xs-12.col-sm-4.text-center
-                  figure
-                    img.img-circle.img-responsive(src='http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png', alt='')
-              |             
-              |                         
-              .col-xs-12.divider.text-center
-                .col-xs-12.col-sm-4.emphasis
-                  button.btn.btn-success.btn-block
-                    span.fa.fa-plus-circle
-                    |  GitHub
-                |                             
-                .col-xs-12.col-sm-4.emphasis
-                  button.btn.btn-info.btn-block
-                    span.fa.fa-user
-                    |  Linkedin
-    //- jQuery
-    script(src='js/jquery.js')
-    //- Bootstrap Core JavaScript
-    script(src='js/bootstrap.min.js')
-    //- Plugin JavaScript
-    script(src='js/jquery.easing.min.js')
-    |     
-    script(src='js/jquery.fittext.js')
-    |     
-    script(src='js/wow.min.js')
-    //- Custom Theme JavaScript
-    script(src='js/creative.js')
+                p Change Password
+                |                                 
+                div(id="school") School: 
+                  p=user[0].attributes.school
+                |                                 
+                p
+                  strong Interests: 
+                  |                                     
+                  span.tags Design
+                  |  
+                  |                                     
+                  span.tags Web dev
+                  |                                     
+                  span.tags iOS
+                  |                                     
+                  span.tags Android
+              |              
+              |                             
+              .col-xs-12.col-sm-4.text-center
+                figure
+                  img.img-circle.img-responsive(src='http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png', alt='')
+            |             
+            |                         
+            .col-xs-12.divider.text-center
+              .col-xs-12.col-sm-4.emphasis
+                button.btn.btn-success.btn-block
+                  span.fa.fa-plus-circle
+                  |  GitHub
+              |                             
+              .col-xs-12.col-sm-4.emphasis
+                button.btn.btn-info.btn-block
+                  span.fa.fa-user
+                  |  Linkedin
+  
+  script(src='http://www.parsecdn.com/js/parse-1.4.2.min.js');               
+  //- jQuery
+  script(src='js/jquery.js')
+  //- Bootstrap Core JavaScript
+  script(src='js/bootstrap.min.js')
+  //- Plugin JavaScript
+  script(src='js/jquery.easing.min.js')
+  |     
+  script(src='js/jquery.fittext.js')
+  |     
+  script(src='js/wow.min.js')
+  //- Custom Theme JavaScript
+  script(src='js/creative.js')

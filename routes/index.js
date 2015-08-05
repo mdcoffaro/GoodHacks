@@ -23,17 +23,16 @@ router.get('/about', function(req, res, next) {
 
 /*GET student profile page */
 router.get('/studentProfile', function(req, res) {
-	console.log(req.user);
 	var userId = req.query.userid;
 	var query = new Parse.Query(Parse.User);
 	query.equalTo("objectId", userId);
 	query.find({
   		success: function(userObject) {
     		// need verify that the user requesting this page is the correct student for that student profile and is logged in
-
     		res.render('studentProfile', { user: userObject });
   		},
   		error: function(){
+  			console.log("uh oh");
   			res.render('error.html');
   		}
 	});
