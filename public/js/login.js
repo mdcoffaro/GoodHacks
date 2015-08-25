@@ -34,11 +34,11 @@ function loginUser(e) {
 
 
 			//display their profile page (need to figure out routes)
-			console.log("http://localhost:3000/studentProfile?userid=" + currentUser.id);
+			console.log("http://goodhacks.co/studentProfile?userid=" + currentUser.id);
 
 			
 
-			window.location =  "http://localhost:3000/studentProfile?userid=" + currentUser.id;
+			window.location =  "http://goodhacks.co/studentProfile?userid=" + currentUser.id;
 			
 		},
 		error: function(username, error){
