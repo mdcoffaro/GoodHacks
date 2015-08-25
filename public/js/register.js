@@ -7,6 +7,8 @@ $(document).ready(function () {
 		if(!verifyName($("#first_name").prop('value'), $("#last_name").prop('value'))) return;
 		if(!verifyEmail($("#email").prop('value'))) return;
 		if(!verifyPassword($("#password").prop('value'), $("#password_confirmation").prop('value'))) return;
+		if(!verifySchool($("#institution").prop('value'))) return;
+
 
 		// Check forms
 		//insets data into db
@@ -60,11 +62,20 @@ function verifyName(firstname, lastname) {
 
 function verifyEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    if(re.test(email)) return true;
+    if(re.test(email)){}
     else {
     	alertUser("Not a valid email.");
     	return false;
     }
+    var query = new Parse.Query(Parse.User);
+	query.equalTo("email", email);
+	query.find({
+		success: function(user){
+			alertUser("Email is already registered");
+			return false;
+		}
+	});
+	return true;
 }
 
 function verifyPassword(password, confirm) {
@@ -74,6 +85,14 @@ function verifyPassword(password, confirm) {
 	}
 	if(password.length <= 6) {
 		alertUser("password must be 7 characters or longer")
+		return false;
+	}
+	return true;
+}
+
+function verifySchool(school){
+	if(school.length <= 0){
+		alertUser("You must enter the univerisyt/institution you currently attend.")
 		return false;
 	}
 	return true;

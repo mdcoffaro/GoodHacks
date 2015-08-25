@@ -14,9 +14,9 @@ $(document).ready(function () {
 			//continue page load
 		}else{
 			//prevent page load, redirect to home page
-			window.location = "http://localhost:3000";
+			window.location = "http://goodhacks.co";
 		}
 	}else{
-		window.location = "http://localhost:3000";
+		window.location = "http://goodhacks.co";
 	}	
 });
